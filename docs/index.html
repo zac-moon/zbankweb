@@ -10,17 +10,47 @@
         }
         body {
             font-family: "Darker_Grotesque", sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-        #businessLogin,#userLogin {
-            width:400px;
-            height:280px;
-            font-size:70px;
+        #title {
+            font-size:300px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #4f1d7e;
+            margin-top: 0;
+        }
+        #userLogin, #businessLogin {
+            width: 200px;
+            height: 50px;
+            font-size: 18px;
+            background-color: #4f1d7e;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #userLogin:hover, #businessLogin:hover {
+            background-color: #753ca3;
+        }
+        #userLogin:focus, #businessLogin:focus {
+            outline: none;
         }
     </style>
 </head>
 <body>
-    <h1 align="center">ZBANK</h1>
-    <br><button id="userLogin">LOGIN AS USER</button>
-    <button id="businessLogin">LOGIN AS BUSINESS</button>
+    <div align="center">
+        <h1 id="title">ZBANK</h1>
+        <br>
+        <button id="userLogin">LOGIN AS USER</button>
+        <button id="businessLogin">LOGIN AS BUSINESS</button>
+    </div>
 </body>
 </html>
