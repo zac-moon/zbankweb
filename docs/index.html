@@ -19,7 +19,7 @@
             height: 100vh;
         }
         #title {
-            font-size:300px;
+            font-size: 80px;
         }
         h1 {
             font-size: 36px;
@@ -49,8 +49,16 @@
     <div align="center">
         <h1 id="title">ZBANK</h1>
         <br>
-        <button id="userLogin">LOGIN AS USER</button>
-        <button id="businessLogin">LOGIN AS BUSINESS</button>
+        <button id="userLogin" onclick="loginAsUser()">LOGIN AS USER</button>
+        <button id="businessLogin" onclick="loginAsBusiness()">LOGIN AS BUSINESS</button>
     </div>
+    <script>
+        function loginAsUser(){
+            window.location.href = "/login/user.html";
+        }
+        function loginAsBusiness(){
+            window.location.href = '/login/business.html';
+        }
+    </script>
 </body>
 </html>
