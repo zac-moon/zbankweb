@@ -54,10 +54,13 @@
     </div>
     <script>
         function loginAsUser(){
-            window.location.href = "/login/user.html";
+            var currentURL = window.location.href;
+            var furl = 
+            window.location.href = currentURL+"/login/user.html";
         }
         function loginAsBusiness(){
-            window.location.href = '/login/business.html';
+            var currentURL = window.location.href;
+            window.location.href = currentURL+'/login/business.html';
         }
     </script>
 </body>
