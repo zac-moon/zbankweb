@@ -49,16 +49,16 @@
     <div align="center">
         <h1 id="title">ZBANK</h1>
         <br>
-        <button id="userLogin" onclick="loginAsUser()">LOGIN AS USER</button>
-        <button id="businessLogin" onclick="loginAsBusiness()">LOGIN AS BUSINESS</button>
+        <button id="userLogin" onclick="loginAsAUser()">LOGIN AS USER</button>
+        <button id="businessLogin" onclick="loginAsABusiness()">LOGIN AS BUSINESS</button>
     </div>
     <script>
-        function loginAsUser(){
+        function loginAsAUser(){
             var currentURL = window.location.href;
             var furl = 
             window.location.href = currentURL+"/login/user.html";
         }
-        function loginAsBusiness(){
+        function loginAsABusiness(){
             var currentURL = window.location.href;
             window.location.href = currentURL+'/login/business.html';
         }
